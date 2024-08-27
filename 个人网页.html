@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>我的个人网页</title>
+    <style>
+        body {
+            margin: 0;
+            font-family: Arial, sans-serif;
+            background-color: #f4f4f4;
+            color: #333;
+        }
+
+        .container {
+            max-width: 900px;
+            margin: 50px auto;
+            background-color: white;
+            padding: 20px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+            border-radius: 10px;
+            transition: transform 0.5s ease;
+        }
+
+        .container:hover {
+            transform: translateY(-10px);
+        }
+
+        h1 {
+            text-align: center;
+            font-size: 2.5em;
+            color: #333;
+        }
+
+        .content {
+            line-height: 1.8;
+        }
+
+        .section {
+            margin: 20px 0;
+        }
+
+        .section h2 {
+            font-size: 1.8em;
+            color: #555;
+            margin-bottom: 10px;
+            border-bottom: 2px solid #eee;
+            padding-bottom: 5px;
+        }
+
+        .contact-info {
+            text-align: center;
+        }
+
+        .contact-info p {
+            font-size: 1.2em;
+            margin: 5px 0;
+        }
+
+        a {
+            color: #1e90ff;
+            text-decoration: none;
+        }
+
+        a:hover {
+            text-decoration: underline;
+        }
+
+        .fade-in {
+            opacity: 0;
+            animation: fadeIn 2s forwards;
+        }
+
+        @keyframes fadeIn {
+            to {
+                opacity: 1;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="container fade-in">
+        <h1>个人简介</h1>
+        <div class="content">
+            <div class="section">
+                <h2>简介</h2>
+                <p>您好！我是 [你的名字]，专注于 [你的领域] 的专业人士。我热衷于不断学习和成长，并致力于创造有意义的工作。</p>
+            </div>
+            <div class="section">
+                <h2>经历</h2>
+                <p>我拥有 [描述你的工作经历]，并且在 [领域或行业] 中积累了丰富的经验。我曾担任 [职位] 并参与了多个成功的项目。</p>
+            </div>
+            <div class="section contact-info">
+                <h2>联系方式</h2>
+                <p>电话: [你的电话]</p>
+                <p>邮箱: <a href="mailto:[你的邮箱]">[你的邮箱]</a></p>
+            </div>
+        </div>
+    </div>
+</body>
+</html>
